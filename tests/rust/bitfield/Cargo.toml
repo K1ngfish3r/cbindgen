@@ -1,7 +1,0 @@
-[package]
-name = "bitfield"
-version = "0.1.0"
-authors = ["cbindgen"]
-
-[features]
-cbindgen = []

@@ -1,7 +1,0 @@
-[package]
-name = "single_crate_default_config"
-version = "0.1.0"
-authors = ["cbindgen"]
-
-[features]
-cbindgen = []
