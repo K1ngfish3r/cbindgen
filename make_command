@@ -1,1 +1,1 @@
-cargo build --release --frozen --all-targets
+CARGO_PROFILE_RELEASE_DEBUG=2 CARGO_PROFILE_RELEASE_LTO=true CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1 cargo build --release --frozen --all-targets

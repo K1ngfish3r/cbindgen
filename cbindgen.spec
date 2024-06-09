@@ -7,7 +7,7 @@
 #
 Name     : cbindgen
 Version  : 0.26.0
-Release  : 1
+Release  : 2
 URL      : https://github.com/mozilla/cbindgen/archive/refs/tags/0.26.0.tar.gz
 Source0  : https://github.com/mozilla/cbindgen/archive/refs/tags/0.26.0.tar.gz
 Source1  : http://localhost/vendor/cbindgen/snapshot/cbindgen-2024-06-07-08-33-30.tar.xz
@@ -48,7 +48,7 @@ echo 'directory = "vendor"' >> .cargo/config.toml
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-cargo build --release --frozen --all-targets
+CARGO_PROFILE_RELEASE_DEBUG=2 CARGO_PROFILE_RELEASE_LTO=true CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1 cargo build --release --frozen --all-targets
 
 %install
 install -Dm0755 ./target/release/%{NAME} %{buildroot}%{_bindir}/%{NAME}
