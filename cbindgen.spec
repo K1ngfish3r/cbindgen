@@ -7,7 +7,7 @@
 #
 Name     : cbindgen
 Version  : 0.26.0
-Release  : 2
+Release  : 3
 URL      : https://github.com/mozilla/cbindgen/archive/refs/tags/0.26.0.tar.gz
 Source0  : https://github.com/mozilla/cbindgen/archive/refs/tags/0.26.0.tar.gz
 Source1  : http://localhost/vendor/cbindgen/snapshot/cbindgen-2024-06-07-08-33-30.tar.xz
